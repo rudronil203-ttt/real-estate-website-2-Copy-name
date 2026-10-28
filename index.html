@@ -36,7 +36,7 @@ document.getElementById('year').textContent = new Date().getFullYear();
 const form = document.getElementById('contact-form'), statusBox = document.getElementById('form-status'), submitButton = document.getElementById('submit-button');
 form.addEventListener('submit', async function(event) {
  event.preventDefault();
- const key = form.querySelector('[name="access_key"]').value.trim();
+ const key = form.querySelector('[name="d31f7876-e532-479b-8e78-e6bfad0a26ae"]').value.trim();
  if (!key || key === 'd31f7876-e532-4798-be78-e6bfad0a26ae') { statusBox.textContent = 'Setup needed: add your Web3Forms Access Key before testing this form.'; statusBox.style.color = '#a33a2b'; return; }
  submitButton.disabled = true; submitButton.textContent = 'Sending...'; statusBox.textContent = '';
  try {
