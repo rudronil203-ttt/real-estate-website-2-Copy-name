@@ -37,7 +37,7 @@ const form = document.getElementById('contact-form'), statusBox = document.getEl
 form.addEventListener('submit', async function(event) {
  event.preventDefault();
  const key = form.querySelector('[name="access_key"]').value.trim();
- if (!key || key === 'YOUR_WEB3FORMS_ACCESS_KEY') { statusBox.textContent = 'Setup needed: add your Web3Forms Access Key before testing this form.'; statusBox.style.color = '#a33a2b'; return; }
+ if (!key || key === 'd31f7876-e532-4798-be78-e6bfad0a26ae') { statusBox.textContent = 'Setup needed: add your Web3Forms Access Key before testing this form.'; statusBox.style.color = '#a33a2b'; return; }
  submitButton.disabled = true; submitButton.textContent = 'Sending...'; statusBox.textContent = '';
  try {
   const response = await fetch(form.action, {method:'POST', body:new FormData(form)});
